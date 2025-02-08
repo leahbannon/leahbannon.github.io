@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Leah T. Bannon</title>
+    <meta name="description" content="About Leah Bannon and some stuff she does.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>  window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('.tooltip').tooltipster({
+        position: 'bottom',
+      }
+      );
+    });
+    </script>
+  </head>
+
+  <body>
+  <!--[if lt IE 9]>
+    <div class="browsehappy">
+    <div class="container">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </div>
+    </div>
+  <![endif]-->
+    <section class="module content">
+
+    <header class="headerbox clearfix">
+      <h1 class="logo"><a href="http://leah.io">Leah T.<br>Bannon</a></h1>
+      <p class="tagline">welcome<br>to<br>my<br>website<br><3</p>
+    </header>
+
+    <div>
+      <section class="box clearfix">
+        <!--
+        <a href="http://www.npr.org/blogs/alltechconsidered/2015/01/28/382178574/remaking-the-u-s-governments-online-image-one-website-at-a-time"><img class="image2"src="images/photoof18fcopyrightnpr.png" width="200px" alt="leah bannon working at 18f office photo copyright National Public Radio"></a>
+        -->
+        <h2>Harvard Kennedy School Lecture:<br>APIs, data, and the gov digital transformation movement</h2>
+         <h3>Links you'll need</h3>
+            <ul>
+              <li><a href="https://api.open.fec.gov/developers/">Federal Election Commission API</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en-US">JSON formatter</a></li>
+              <li><a href="https://konklone.io/json/">JSON to CSV converter</a></li>
+              <li>You'll also need Chrome browser and Google Drive (or similar software).</li>
+            </ul>
+        <h3>Today</h3>
+          <ul>
+            <li><a href="#aboutapis">About APIs</a></li>
+            <li><a href="#handson">Hands on!</a></li>
+            <li><a href="#improvegov">The other major ways to improve government and the world</a></li>
+            <li><a href="#transformation">About digital transformation movements in government</a></li>
+            <li><a href="#further">Further reading</a></li>
+        </ul>
+        <h3 id="aboutapis">About APIs</h3>
+         <ol>
+           <li>This is such a big umbrella term that basically means anything that lets computers talk to each other</li>
+           <li>You need to know about them because they are fundamental to much of how the web works</li>
+           <li>Some types: basic website, oauth logins, data</li>
+           <li>I think it's a good foundation for starting to get into tech because it opens up the tech part of your problem solving brain</li>
+           <li>Important: always build on top of an API first, i.e. “dogfooding"</li>
+         </ol>
+        <h3 id="handson">Hands on!</h3>
+          <ol>
+            <li>First, a little about links. Let's check out <a href="https://beta.fec.gov/data/candidate/P00003392/?tab=other-spending&cycle=2016&election_full=false">Hillary's finances</a>.</li>
+            <li>This is essentially how you'll construct your API requests</li>
+            <li>Let's check out the <a href="https://api.open.fec.gov/developers/">API powering betaFEC</a> (and note the /developers)</li>
+            <li>Build your request</li>
+            <li>Copy that JSON and paste it into the <a href="https://konklone.io/json/">JSON to CSV converter</a></li>
+            <li>Copy that CSV data and paste it into your spreadsheet</li>
+            <li>Ta da! You're basically doing a computer's job. If you were programming, you'd tell the computer to do this in its language.</li>             
+          </ol>
+       <h3 id="improvegov">The other major ways to improve government and the world</h3>
+        <ul>
+          <li>design</li>
+          <li>open source</li>
+          - free vs millions for proprietary software and consulting (and vendor lock in)<br>
+          - safer, usually<br>
+         - trademarks and bad licenses<br>
+         - for ex: Firefox, Android, Wordpress, git but not GitHub (similar to gov building the open source part as a platform for private sector innovation)<br>
+        - libraries: ruby and rails, python and flask, analogy<br>
+          <li>agile and lean</li>
+          <li>transparency and open gov and GitHub</li>
+          <li>diversity and inclusion</li>
+          <li>open source cloud infrastructure</li>
+          <li>https</li>
+          <li>macs, slack, google mail</li>
+        </ul>
+       <h3 id="transformation">About digital transformation movements in government</h3>
+        <ol>
+        <li>OFA</li>
+        <li><a href="https://www.archives.gov/files/cui/documents/2009-WH-memo-on-transparency-and-open-government.pdf">Obama open gov memo</a></li>
+        <li>UK Government Digital Service<br>- <em><a href="http://www.computerweekly.com/news/4500251662/Interview-Government-digital-chief-Mike-Bracken-why-I-quit">Interview: Government digital chief Mike Bracken – why I quit</a></em></li>
+        <li>Code for America<br>- <em><a href="https://www.nytimes.com/interactive/2016/11/13/magazine/design-issue-code-for-america.html?_r=0">Code Cracking: Why is it so hard for the government to design a website?</a></em></li>
+        <li>Consumer Financial Protection Bureau<br>- <em><a href="http://techpresident.com/news/24451/9-things-you-should-know-debating-healthcaregov-someone-who-actually-launched-successful">9 Things You Should Know Before Debating HealthCare.gov, From Someone Who Actually Launched a Successful Government Website</a></em></li>
+        <li><a href="https://obamawhitehouse.archives.gov/sites/default/files/omb/egov/digital-government/digital-government.html">Obama Digital Government Strategy</a></li>
+        <li>Presidential Innovation Fellows</li>
+        <li>healthcare.gov</li>
+        <li><a href="https://18f.gsa.gov">18F</a></li>
+        <li>USDS<br>- <em><a href="https://www.usds.gov/report-to-congress/2016/">2016 Report to Congress</a></em></li>
+        <li>USDS VA and other agency teams<br>- <em><a href="https://www.vets.gov/playbook/">Vets.gov Playbook</a></em></li>
+      </ol>
+    <h3 id="further">Further reading</h3>
+        <ul>
+          <li><a href="https://github.com/18F/transformation-research/blob/master/preliminary-report.md">Best practices in digital transformation research</a>
+          <li><a href="https://methods.18f.gov/">18F design method cards</a></li>
+          <li><a href="https://guides.18f.gov/guides/">18F guides</a></li>
+          <li><a href="https://sourcecode.cio.gov/">White House source code policy</a></li>
+          <li><a href="https://fivethirtyeight.com/features/politics-podcast-data-under-trump/">538 politics podcast about government data</a></li>
+          <li><a href="https://pages.18f.gov/contracting-cookbook/">18F contracting cookbook</a></li>
+          <li><a href="https://modularcontracting.18f.gov/">18F guide to modular procurement</a></li>
+          <li><a href="https://playbook.cio.gov/techfar/">USDS TechFAR Handbook</a></li>
+          <li><a href="https://medium.com/the-u-s-digital-service/redesigning-the-journey-to-critical-benefits-for-americans-in-poverty-2ca068591f32#.x6x163ft0">Redesigning the journey to critical benefits for Americans in poverty</a></li>
+          <li><a href="https://government.github.com/">GitHub for government</a></li>
+        </ul>
+      </section>
+    </div>
+    
+    
+  </section>
+  </body>
+
+</html>
